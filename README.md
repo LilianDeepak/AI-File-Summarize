@@ -1,23 +1,49 @@
-# AI-File-Summarize
-AI File Summarizer is a smart tool that uses artificial intelligence to generate concise summaries from PDF and DOCX documents, helping users quickly grasp key information without reading the entire file. Supports multiple file formats and delivers accurate, readable summaries.
-# PDF & DOCX Summarizer Application
-https://filesummarizer.streamlit.app/
+PDF & DOCX Summarizer Application
+Live Demo
 
-## Overview
-This Streamlit-based application allows users to upload PDF or DOCX files and receive a summarized version of the document's text. It uses Google Generative AI to generate summaries from the extracted text of the uploaded file. Users can also copy the generated summary directly to the clipboard.
+Overview
+This Streamlit-based app enables users to upload PDF or DOCX files and receive concise AI-generated summaries of the document content. Leveraging Google Generative AI, it extracts text from uploaded files and produces clear, readable summaries. Users can easily copy the summary to their clipboard.
 
-## Features
-- **File Upload**: Supports both PDF and DOCX file uploads.
-- **Text Extraction**: Extracts text from the uploaded PDF or DOCX files.
-- **AI-Powered Summarization**: Uses Google Generative AI (via `google.generativeai`) to generate summaries of the extracted text.
-- **Clipboard Copying**: Allows users to copy the generated summary to their clipboard with one click.
+Features
+File Upload: Upload PDF or DOCX documents with ease.
 
-## Prerequisites
+Text Extraction: Extracts text seamlessly from PDFs and DOCX files.
 
-To run this application, you will need:
-- **Python 3.7 or later**
-- **Streamlit**: The web framework used for the UI.
-- **Google Generative AI API Key**: Needed to access the summarization service.
-- **PyPDF2**: For PDF text extraction.
-- **python-docx**: For DOCX text extraction.
-- **Pyperclip**: For clipboard functionality.
+AI-Powered Summarization: Utilizes Google Generative AI for accurate and meaningful summaries.
+
+Clipboard Copy: Copy summaries instantly with a single click.
+
+Prerequisites
+Before running the app, ensure you have the following installed:
+
+Python 3.7 or later
+
+Streamlit
+
+Google Generative AI API key
+
+PyPDF2 (for PDF text extraction)
+
+python-docx (for DOCX text extraction)
+
+Pyperclip (for clipboard support)
+
+Installation & Running
+Clone the repository:
+
+
+git clone <repository-url>
+cd <repository-folder>
+Install dependencies:
+
+
+pip install -r requirements.txt
+Set your Google Generative AI API key as an environment variable:
+
+
+export GOOGLE_API_KEY="your_api_key_here"
+Run the Streamlit app:
+
+
+streamlit run app.py
+Open your browser at http://localhost:8501 to access the app.
